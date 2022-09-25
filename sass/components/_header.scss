@@ -1,10 +1,14 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 .header > .container {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
+
 @media screen and (max-width: 767px) {
   .header-nav__list {
     display: none;
@@ -30,6 +34,7 @@
     transition: fill var(--stnd-transition);
   }
 }
+
 @media screen and (min-width: 768px) {
   .open-mobile-menu-btn {
     display: none;
@@ -134,7 +139,6 @@
   }
 }
 @media screen and (min-width: 1200px) {
-
   .header > .container {
     display: flex;
     align-items: center;
