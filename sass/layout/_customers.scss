@@ -1,0 +1,32 @@
+.customers__list {
+  display: flex;
+  gap: 30px;
+}
+
+.customers__item {
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color var(--stnd-transition);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.customers__icon {
+  fill: #afb1b8;
+  transition: fill var(--stnd-transition);
+  .customers__link:hover &,
+  .customers__link:focus & {
+    fill: var(--accent-color);
+  }
+}
