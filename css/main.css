@@ -844,6 +844,7 @@ textarea {
 }
 
 .features__title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: var(--font-weight-bold);
   font-size: var(--stnd-font-size);
@@ -856,6 +857,25 @@ textarea {
   line-height: 1.71;
 }
 
+@media screen and (min-width: 768px) {
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .specific {
+    display: none;
+  }
+}
 .specific {
   padding-top: 0;
 }
