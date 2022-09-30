@@ -22,17 +22,19 @@
     <header class="header">
       <div class="container">
         <nav class="header-nav">
-          <a class="logotype" href="./index.html"
+          <a class="logotype header-nav__logotype" href="./index.html"
             ><span class="logotype--one-word-color">Web</span>Studio</a
           >
           <ul class="header-nav__list">
             <li>
-              <a class="header-nav__link" href="./index.html"
+              <a
+                class="header-nav__link"
+                href="./index.html"
                 >Студія</a
               >
             </li>
             <li>
-              <a class="header-nav__link header-nav-link--current" href="./portfolio.html">Портфоліо</a>
+              <a class="header-nav__link header-nav__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li>
               <a class="header-nav__link" href="#footer-link">Контакти</a>
@@ -57,10 +59,66 @@
             >
           </li>
         </ul>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="19" height="19">
+              <use href="./images/symbol-defs.svg#close-modal"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+              <li>
+                <a
+                  class="mobile-menu__nav-list-item"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__nav-list-item mobile-menu__nav-list-item--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__nav-list-item" href="#footer-link"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contact-list">
+            <li>
+              <a class="mobile-menu__contact-phone" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a
+                class="mobile-menu__contact-mail"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-link-list">
+            <li class="mobile-menu__social-link-item"><a class="mobile-menu__social-link" href="">Instagram</a></li>
+            <li class="mobile-menu__social-link-item"><a class="mobile-menu__social-link" href="">Twitter</a></li>
+            <li class="mobile-menu__social-link-item"><a class="mobile-menu__social-link" href="">Facebook</a></li>
+            <li class="mobile-menu__social-link-item"><a class="mobile-menu__social-link" href="">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="portfolio-nav">
@@ -230,7 +288,9 @@
                   </div>
                 </div>
                 <div class="portfolio-card__position">
-                  <h3 class="portfolio-card__title">Inspiration has no Borders</h3>
+                  <h3 class="portfolio-card__title">
+                    Inspiration has no Borders
+                  </h3>
                   <p class="portfolio-card__text">Веб-сайт</p>
                 </div>
               </a>
@@ -309,9 +369,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer id="footer-link" class="page-footer">
+    <!-- <footer id="footer-link" class="page-footer">
       <div class="container">
         <div class="footer-text">
           <a class="logotype-footer" href="./index.html"
@@ -403,6 +463,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
