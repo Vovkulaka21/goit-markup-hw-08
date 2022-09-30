@@ -728,14 +728,21 @@ textarea {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: var(--font-weight-bold);
-  font-size: 36px;
-  line-height: 1.67;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   color: var(--second-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.67;
+  }
+}
 .order-service {
   padding: 118px 0;
   text-align: center;
@@ -916,10 +923,11 @@ textarea {
 
 .team__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
-.team-card {
+.team__card {
   width: 270px;
   background-color: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
