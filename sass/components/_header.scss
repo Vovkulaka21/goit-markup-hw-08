@@ -2,9 +2,11 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header > .container {
+.header__container {
   display: flex;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -14,7 +16,7 @@
   .header-contact {
     display: none;
   }
-  .header > .container {
+  .header__container {
     justify-content: space-between;
   }
   .open-mobile-menu-btn {
@@ -135,7 +137,6 @@
   }
 }
 @media screen and (min-width: 1200px) {
-
   .header-nav {
     display: flex;
     align-items: center;
