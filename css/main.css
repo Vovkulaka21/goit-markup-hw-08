@@ -978,6 +978,7 @@ textarea {
 
 .team {
   background-color: var(--alternative-bakcground-color);
+  width: 100%;
 }
 
 .team__list {
