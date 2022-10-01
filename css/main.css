@@ -558,6 +558,21 @@ ol {
   outline: 1px solid var(--accent-color);
 }
 
+.mailing__icon {
+  margin-left: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .footer__list {
+    margin-bottom: 0;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
