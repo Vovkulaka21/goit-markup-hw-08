@@ -9,7 +9,7 @@
 }
 
 .team__card {
-  width: 270px;
+  width: 450px;
   background-color: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -64,4 +64,28 @@
   .social-links:focus & {
     fill: var(--main-color);
   }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+  .team__card {
+    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+    .team__list {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+      }
+      .team__card {
+        width: 270px;
+        flex-basis: calc((100% - 30px) / 4);
+      }
 }
