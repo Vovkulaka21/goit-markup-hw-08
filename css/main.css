@@ -544,7 +544,7 @@ ol {
 }
 
 .mailing__input {
-  width: 100%;
+  width: 85vw;
   height: 50px;
   padding: 15px 16px;
   color: var(--main-color);
