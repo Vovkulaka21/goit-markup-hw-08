@@ -269,6 +269,9 @@ ol {
   .open-mobile-menu-btn {
     display: none;
   }
+  .header__container {
+    padding: 0;
+  }
   .header-nav {
     display: flex;
     align-items: center;
@@ -671,7 +674,7 @@ ol {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 450px) {
   .modal {
     width: 450px;
   }

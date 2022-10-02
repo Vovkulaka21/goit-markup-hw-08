@@ -17,6 +17,7 @@
   border-radius: 4px;
   transition: color var(--stnd-transition),
     background-color var(--stnd-transition), box-shadow var(--stnd-transition);
+    
   &:hover,
   &:focus {
     background-color: var(--accent-color);
