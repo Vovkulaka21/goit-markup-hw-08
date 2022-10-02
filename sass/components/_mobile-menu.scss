@@ -109,7 +109,17 @@
     padding-left: 10px;
   }
 }
-
+// @media screen and (max-width: 449px) {
+//   .mobile-menu__nav-list-item {
+//     font-size: 10vw;
+//   }
+//   .mobile-menu__contact {
+//     font-size: 5vw;
+//   }
+//   .mobile-menu__social-link {
+//     font-size: 3.5vw;
+//   }
+// }
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
